@@ -1,0 +1,112 @@
+* { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eaf6ff; /* nền xanh nhạt giống hình */
+  color: #111;
+}
+
+/* HEADER BAR */
+.topbar{
+  background: #0b86c6;            /* xanh đậm */
+  padding: 14px 12px 10px;
+  text-align: center;
+  border-top: 6px solid #eaf6ff;  /* tạo khoảng trắng mỏng trên */
+}
+
+.topbar h1{
+  margin: 0;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.topbar p{
+  margin: 6px 0 0;
+  color: #e9f6ff;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* CONTENT */
+.content{
+  padding: 14px 12px 70px; /* chừa chỗ footer */
+  max-width: 1400px;       /* để nhìn giống trang rộng */
+}
+
+section{
+  margin-bottom: 18px;
+}
+
+h2{
+  margin: 8px 0 10px;
+  color: #0b66b2;  /* xanh tiêu đề */
+  font-size: 26px;
+  font-weight: 800;
+}
+
+p{
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* dòng nhấn màu xanh nghiêng */
+.note-blue{
+  color: #0b66b2;
+  font-style: italic;
+}
+
+/* LIST dịch vụ (có icon giống hình) */
+.services{
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services li{
+  position: relative;
+  padding-left: 26px;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.services li::before{
+  content: "🦷";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-1px);
+}
+
+/* cảnh báo đỏ */
+.warning{
+  color: #c00000;
+  font-style: italic;
+}
+
+/* link dưới Liên hệ */
+.link{
+  display: inline-block;
+  margin-top: 6px;
+  color: #0b56ff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* FOOTER BAR */
+.bottombar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0b86c6;
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  font-size: 34px;
+  padding: 10px 12px;
+  border-top: 6px solid #eaf6ff; /* giống viền mỏng */
+}
